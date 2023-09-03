@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TP3</title>
+</head>
+<body>
+    <header>
+        <nav class="border-gray-200 bg-black">
+            <div class="container flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="index.html" class="flex items-center">
+                    <img src="https://placehold.co/600x400" class="h-12 mr-3" alt="">
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 rounded-lg md:hidden focus:ring-2 text-gray-400 hover:bg-orange-600 focus:ring-orange-600" aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-stone-800 md:bg-black border-orange-400">
+                        <li>
+                            <a href="index.html" class="block py-2 pl-3 pr-4 rounded md:border-0 md:hover:text-orange-400 md:p-0 text-slate-100 md:hover:text-orange-400 hover:bg-orange-600 hover:text-white md:hover:bg-transparent text-lg">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="corgis.html" class="block py-2 pl-3 pr-4 rounded md:border-0 md:hover:text-orange-400 md:p-0 text-slate-100 md:hover:text-orange-400 hover:bg-orange-600 hover:text-white md:hover:bg-transparent text-lg">Corgis</a>
+                        </li>
+                        <li>
+                            <a href="adopter.html" class="block py-2 pl-3 pr-4 rounded md:border-0 md:hover:text-orange-400 md:p-0 text-slate-100 md:hover:text-orange-400 hover:bg-orange-600 hover:text-white md:hover:bg-transparent text-lg">Adopter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zqL31hUuuIg?si=Su4JCshcKyS3kBFr" title="YouTube video player" frameborder="0" allow="" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h2>Le pour et le contre des Corgis</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aut optio tenetur excepturi id vero quae architecto assumenda. Laboriosam, inventore. Consectetur, ducimus cupiditate aliquam blanditiis, corrupti nam, fugit dolorum amet unde ratione veritatis. Cupiditate ipsum possimus corrupti, recusandae enim minima rem fuga ipsa nihil libero itaque nostrum fugit accusamus ad!</p>
+                </div>
+            </div>
+        </section>
+        <section class="container mx-auto grid grid-cols-12 px-4 mb-20">
+            <div class="col-span-12 md:col-start-4 md:col-end-10">
+                <h2 class="text-4xl text-center font-semibold">Foire aux questions</h2>
+            </div>
+            <div id="accordionExample" class="col-span-12 grid grid-cols-12 mt-2">
+                <div class="col-span-12 xl:col-span-6 mb-6 xl:pr-3">
+                    <div class="rounded-t-lg border-2 border-orange-500 bg-white">
+                        <h3 class="mb-0" id="headingOne">
+                            <button class="group relative flex w-full items-center rounded-t-[15px] border-0 bg-white px-5 py-4 text-left text-lg font-medium text-orange-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)]" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Rétro et Flamboyant : L'Immersive Direction Artistique
+                                <span class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="h-6 w-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </h3>
+                        <div id="collapseOne" class="!visible hidden" data-te-collapse-item aria-labelledby="headingOne" data-te-parent="#accordionExample">
+                            <div class="px-5 py-4">
+                                <p>La direction artistique du film Bohemian Rhapsody transporte les spectateurs dans les années 1970 et 1980, recréant avec précision l'esthétique visuelle de l'époque. Des costumes flamboyants aux décors rétro, chaque détail est soigneusement conçu pour immerger le public dans l'univers de Queen.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-2 border-t-0 border-orange-500 bg-white">
+                        <h3 class="mb-0" id="headingTwo">
+                            <button class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-lg font-medium text-orange-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)]" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Captiver les Sens : La Mise en Scène Musicale
+                                <span class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="h-6 w-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </h3>
+                        <div id="collapseTwo" class="!visible hidden" data-te-collapse-item aria-labelledby="headingTwo" data-te-parent="#accordionExample">
+                            <div class="px-5 py-4">
+                                <p>Les performances musicales du film sont magnifiquement mises en scène grâce à une direction artistique ingénieuse. Les scènes de concert captent l'énergie électrisante des performances live de Queen, avec des jeux de lumières spectaculaires et des décors grandioses.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-2 border-t-0 border-orange-500 bg-white">
+                        <h3 class="mb-0" id="headingThree">
+                            <button class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-lg font-medium text-orange-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)]" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Couleurs Électrisantes : L'Esthétique Visuelle Audacieuse
+                                <span class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="h-6 w-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </h3>
+                        <div id="collapseThree" class="!visible hidden" data-te-collapse-item aria-labelledby="headingThree" data-te-parent="#accordionExample">
+                            <div class="px-5 py-4">
+                                <p>L'utilisation de couleurs vives et audacieuses contribue à l'esthétique visuelle unique du film. Les tons chauds et saturés évoquent l'énergie passionnée de la musique de Queen, tandis que les contrastes marqués ajoutent de la profondeur et de l'intensité aux scènes clés.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-2 border-t-0 border-orange-500 bg-white">
+                        <h3 class="mb-0" id="headingFour">
+                            <button class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-lg font-medium text-orange-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)]" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Rendre l'Histoire Vivante : La Recréation des Lieux
+                                <span class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="h-6 w-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </h3>
+                        <div id="collapseFour" class="!visible hidden" data-te-collapse-item aria-labelledby="headingFour" data-te-parent="#accordionExample">
+                            <div class="px-5 py-4">
+                                <p>La reconstitution des lieux emblématiques de la carrière de Queen, tels que le studio d'enregistrement Abbey Road ou la salle de concert du Live Aid, est d'une précision remarquable. La direction artistique rend hommage à l'importance historique de ces endroits tout en les adaptant au langage cinématographique pour créer des séquences visuellement saisissantes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-b-lg border-2 border-t-0 border-orange-500 bg-white">
+                        <h3 class="accordion-header mb-0" id="headingFive">
+                            <button class="group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-lg font-medium text-orange-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)] [&[data-te-collapse-collapsed]]:rounded-b-[15px] [&[data-te-collapse-collapsed]]:transition-none" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Style Iconique : Les Costumes Époustouflants
+                                <span class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="h-6 w-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </h3>
+                        <div id="collapseFive" class="!visible hidden" data-te-collapse-item aria-labelledby="headingFive" data-te-parent="#accordionExample">
+                            <div class="px-5 py-4">
+                                <p>Les costumes portés par les acteurs sont un élément essentiel de la direction artistique de Bohemian Rhapsody. De la tenue flamboyante de Freddie Mercury à ses célèbres pantalons moulants et vestes en cuir, chaque ensemble est conçu pour refléter le style unique et l'individualité des membres du groupe.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 xl:col-span-6 mb-6 xl:pl-3">
+                    <div class="rounded-t-lg border-2 border-orange-500 bg-white">
+                        <h3 class="mb-0" id="headingSix">
+                            <button class="group relative flex w-full items-center rounded-t-[15px] border-0 bg-white px-5 py-4 text-left text-lg font-medium text-orange-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)]" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Authenticité Visuelle : Les Décors Réalistes
+                                <span class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="h-6 w-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </h3>
+                        <div id="collapseSix" class="!visible hidden" data-te-collapse-item aria-labelledby="headingSix" data-te-parent="#accordionExample">
+                            <div class="px-5 py-4">
+                                <p>Les décors intérieurs, tels que les studios d'enregistrement et les chambres d'hôtel, sont minutieusement recréés pour représenter l'époque. Les moindres détails, des posters sur les murs aux équipements audio vintage, contribuent à l'authenticité visuelle du film.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-2 border-t-0 border-orange-500 bg-white">
+                        <h3 class="mb-0" id="headingSeven">
+                            <button class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-lg font-medium text-orange-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)]" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">Animations Créatives : L'Innovation Artistique
+                                <span class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="h-6 w-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </h3>
+                        <div id="collapseSeven" class="!visible hidden" data-te-collapse-item aria-labelledby="headingSeven" data-te-parent="#accordionExample">
+                            <div class="px-5 py-4">
+                                <p>Les séquences d'animation qui ponctuent le récit apportent une dimension artistique supplémentaire à Bohemian Rhapsody. Elles explorent l'imagination créative de Freddie Mercury et offrent une interprétation visuelle innovante des paroles des chansons emblématiques de Queen.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-2 border-t-0 border-orange-500 bg-white">
+                        <h3 class="mb-0" id="headingEight">
+                            <button class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-lg font-medium text-orange-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)]" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">Capturer l'Émotion : La Cinématographie Engageante
+                                <span class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="h-6 w-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </h3>
+                        <div id="collapseEight" class="!visible hidden" data-te-collapse-item aria-labelledby="headingEight" data-te-parent="#accordionExample">
+                            <div class="px-5 py-4">
+                                <p>Les jeux de caméra et de montage soutiennent la direction artistique en créant une dynamique visuelle captivante. Des plans serrés sur les visages des acteurs lors des performances musicales aux mouvements de caméra fluides lors des scènes d'action, chaque choix cinématographique est pensé pour renforcer l'impact émotionnel des scènes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-2 border-t-0 border-orange-500 bg-white">
+                        <h3 class="mb-0" id="headingNine">
+                            <button class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-lg font-medium text-orange-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)]" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">Jeux de Lumière et d'Ombres : L'Atmosphère Visuelle Évocatrice
+                                <span class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="h-6 w-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </h3>
+                        <div id="collapseNine" class="!visible hidden" data-te-collapse-item aria-labelledby="headingNine" data-te-parent="#accordionExample">
+                            <div class="px-5 py-4">
+                                <p>L'utilisation de la lumière et des ombres dans la direction artistique crée une atmosphère évocatrice tout au long du film. Des jeux de lumière théâtraux sur scène aux contrastes sombres dans les moments plus intimes, l'éclairage contribue à raconter l'histoire de Queen d'une manière visuellement puissante.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-b-lg border-2 border-t-0 border-orange-500 bg-white">
+                        <h3 class="accordion-header mb-0" id="headingTen">
+                            <button class="group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-lg font-medium text-orange-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)] [&[data-te-collapse-collapsed]]:rounded-b-[15px] [&[data-te-collapse-collapsed]]:transition-none" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">Symphonie Audiovisuelle : La Direction Artistique Complète
+                                <span class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="h-6 w-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </h3>
+                        <div id="collapseTen" class="!visible hidden" data-te-collapse-item aria-labelledby="headingTen" data-te-parent="#accordionExample">
+                            <div class="px-5 py-4">
+                                <p>Enfin, la direction artistique de Bohemian Rhapsody ne se limite pas à l'esthétique visuelle, elle englobe également la conception sonore et la bande originale du film. Les enregistrements originaux de Queen sont habilement intégrés au récit, créant une expérience audiovisuelle immersive qui célèbre la musique légendaire du groupe.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <form id="form" action="confirmation.html" onsubmit="return validateForm()">
+                <h2>S'inscrire à la liste d'attente</h2>
+                <div class="input-control">
+                    <label for="nom">Nom</label>
+                    <input type="text" name="nom" id="nom">
+                    <div class="errorMessage"></div>
+                </div>
+                <div class="input-control">
+                    <label for="prenom">Prenom</label>
+                    <input type="text" name="prenom" id="prenom">
+                    <div class="errorMessage"></div>
+                </div>
+                <div class="input-control">
+                    <label for="adresse">Adresse</label>
+                    <input type="text" name="adresse" id="adresse">
+                    <div class="errorMessage"></div>
+                </div>
+                <div class="input-control">
+                    <label for="ville">Ville</label>
+                    <input type="text" name="ville" id="ville">
+                    <div class="errorMessage"></div>
+                </div>
+                <div class="input-control">
+                    <label for="codepostal">Code postal</label>
+                    <input type="text" name="codepostal" id="codepostal">
+                    <div class="errorMessage"></div>
+                </div>
+                <div class="input-control">
+                    <label for="telephone">Téléphone</label>
+                    <input type="tel" name="telephone" id="telephone">
+                    <div class="errorMessage"></div>
+                </div>
+                <div class="input-control">
+                    <label for="email">Courriel</label>
+                    <input type="email" name="email" id="email">
+                    <div class="errorMessage"></div>
+                </div>
+                <input class="btn" type="submit">
+            </form>
+            
+        </section>
+    </main>
+    <footer class="bg-black pt-10">
+        <div class="container mx-auto text-slate-100 text-lg">
+            <div class="flex justify-between flex-wrap px-4 pb-2">
+                <div>
+                    <a href="tel:1-418-905-2287" class="fa fa-phone hover:text-orange-400"> 418-905-2287</a>
+                    <a href="mailto:jessy.stpierre@live.com" class="fa fa-envelope-o ml-2 hover:text-orange-400"> jessy.stpierre@live.com</a>
+                </div>
+                <div class="flex">
+                    <span>Jessy St-Pierre</span>
+                    <div class="ml-5">
+                        <a href="#" class="fa fa-facebook-square hover:text-orange-400"></a>
+                        <a href="#" class="fa fa-linkedin-square hover:text-orange-400"></a>
+                        <a href="#" class="fa fa-twitter hover:text-orange-400"></a>
+                        <a href="#" class="fa fa-instagram hover:text-orange-400"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto mt-5 text-slate-100 text-lg px-4"> 
+            <hr class="border-2 border-orange-500">
+            <span class="my-4 inline-block">Cégep de Trois-Rivières</span>
+        </div>
+    </footer>
+</body>
+</html>
