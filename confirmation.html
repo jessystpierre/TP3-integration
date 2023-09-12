@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="medias/favicon.png">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TP3</title>
+</head>
+<body>
+    <header>
+        <nav class="border-gray-200 bg-yellow-500">
+            <div class="container flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="index.html" class="flex items-center">
+                    <img src="medias/logo_transparent.png" class="h-20 mr-3" alt="logo">
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 rounded-lg md:hidden focus:ring-2 text-gray-800 hover:bg-yellow-200 focus:ring-orange-400" aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="#111827" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-orange-400 md:bg-yellow-500 border-orange-400">
+                        <li>
+                            <a href="index.html" class="block py-2 pl-3 pr-4 rounded md:border-0 md:hover:text-yellow-200 md:p-0 text-gray-900 md:hover:text-yellow-200 hover:bg-orange-500 hover:text-white md:hover:bg-transparent text-lg text-center">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="corgis.html" class="block py-2 pl-3 pr-4 rounded md:border-0 md:hover:text-yellow-200 md:p-0 text-gray-900 md:hover:text-yellow-200 hover:bg-orange-500 hover:text-white md:hover:bg-transparent text-lg text-center">Corgis</a>
+                        </li>
+                        <li>
+                            <a href="adopter.html" class="block py-2 pl-3 pr-4 rounded md:border-0 md:hover:text-yellow-200 md:p-0 text-gray-900 md:hover:text-yellow-200 hover:bg-orange-500 hover:text-white md:hover:bg-transparent text-lg text-center">Adopter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="h-96">
+            <h2 class="text-4xl text-zinc-800 font-medium mt-72 text-center">Le formulaire a été envoyé avec succès!</h2>
+        </section>
+    </main>
+    <footer class="bg-zinc-900 pt-10">
+        <div class="container mx-auto text-slate-100 text-lg">
+            <div class="flex justify-between flex-wrap px-4 pb-2">
+                <div>
+                    <a href="tel:1-418-905-2287" class="fa fa-phone hover:text-yellow-500"> 418-905-2287</a>
+                    <a href="mailto:jessy.stpierre@live.com" class="fa fa-envelope-o ml-2 hover:text-yellow-500"> jessy.stpierre@live.com</a>
+                </div>
+                <div class="flex">
+                    <span>Jessy St-Pierre</span>
+                    <div class="ml-5">
+                        <a href="#" class="fa fa-facebook-square hover:text-yellow-500"></a>
+                        <a href="#" class="fa fa-linkedin-square hover:text-yellow-500"></a>
+                        <a href="#" class="fa fa-twitter hover:text-yellow-500"></a>
+                        <a href="#" class="fa fa-instagram hover:text-yellow-500"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto mt-5 text-slate-100 text-lg px-4"> 
+            <hr class="rounded-full border-2 border-yellow-500">
+            <span class="my-4 inline-block">Cégep de Trois-Rivières</span>
+        </div>
+    </footer>
+</body>
+</html>

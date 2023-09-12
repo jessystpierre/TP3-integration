@@ -3,19 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="medias/favicon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="CorgiLuxe PWA">
+    <meta name="description" content="A sample Corgi app">
+    <meta name="theme-color" content="#eab308" />
+    <link rel="apple-touch-icon" href="images/icons/icon-192x192.png">
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Register service worker.
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                .then((reg) => {
+                    console.log('Service worker registered.', reg);
+                });
+            });
+        }
+    </script>
+    <script src="script/install.js" defer></script>
     <title>TP3</title>
 </head>
 <body>
+    
     <header>
+        
         <nav class="border-gray-200 bg-yellow-500">
             <div class="container flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="index.html" class="flex items-center">
-                    <img src="https://placehold.co/600x400" class="h-12 mr-3" alt="">
+                    <img src="medias/logo_transparent.png" class="h-20 mr-3" alt="logo">
                 </a>
                 <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 rounded-lg md:hidden focus:ring-2 text-gray-800 hover:bg-yellow-200 focus:ring-orange-400" aria-controls="navbar-default" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
@@ -32,6 +54,9 @@
                         <li>
                             <a href="adopter.html" class="block py-2 pl-3 pr-4 rounded md:border-0 md:hover:text-yellow-200 md:p-0 text-gray-900 md:hover:text-yellow-200 hover:bg-orange-500 hover:text-white md:hover:bg-transparent text-lg text-center">Adopter</a>
                         </li>
+                        <li>
+                            <button class="block py-2 pl-3 pr-4 rounded md:border-0 md:hover:text-yellow-200 md:p-0 text-gray-900 md:hover:text-yellow-200 hover:bg-orange-500 hover:text-white md:hover:bg-transparent text-lg text-center w-full" id="btnInstall" aria-label="Install" hidden>Installer la PWA</button>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -40,11 +65,11 @@
     <main>
         <section class="container mx-auto grid grid-cols-12 my-10">
             <div class="col-start-2 col-end-12 xl:col-start-4 xl:col-end-10">
-                <img class="mb-5" src="https://placehold.co/800x400" alt="">
+                <img class="mb-5" src="medias/corgi-accueil.jpg" alt="Photo de corgi">
             </div>
             <div class="col-start-2 col-end-12 xl:col-start-4 xl:col-end-10">
-                <h2 class="text-center text-4xl text-zinc-800 font-medium">Titre</h2>
-                <p class="mt-3 text-md text-zinc-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati architecto, earum voluptatem non repellendus laborum iste beatae! Eligendi dolorum, tempore id sapiente, aperiam at beatae itaque sint dignissimos accusantium quo repellendus necessitatibus odit eum unde fuga eos eaque assumenda. Sunt velit ea natus quos perferendis neque nostrum amet, necessitatibus quia rem eligendi asperiores possimus, incidunt, quis molestias consectetur ad ab.</p>
+                <h2 class="text-center text-4xl text-zinc-800 font-medium">Qui sommes-nous?</h2>
+                <p class="mt-3 text-md text-zinc-800">Bienvenue chez CorgiLuxe, une passionnante entreprise dédiée à l'élevage responsable et éthique des adorables Corgis. Notre histoire est ancrée dans l'amour profond que nous portons à cette race unique, et notre engagement envers leur bien-être est au cœur de tout ce que nous faisons. Nous élevons nos Corgis dans un environnement aimant, priorisant leur santé, leur sociabilité et la pureté de la race. Lorsque vous choisissez CorgiLuxe, vous devenez une partie de notre famille, et nous sommes là pour vous guider à chaque étape de votre voyage avec votre nouveau compagnon à quatre pattes. Rejoignez-nous pour partager la joie, l'amour et la beauté que les Corgis apportent à nos vies chaque jour.</p>
             </div>
         </section>
         <section class="bg-orange-100">
@@ -54,23 +79,23 @@
                     <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
                         <!-- Item 1 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="https://placehold.co/800x400" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            <img src="medias/corgi-carrousel-1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Photo de corgi">
                         </div>
                         <!-- Item 2 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="https://placehold.co/800x400" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            <img src="medias/corgi-carrousel-2.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Photo de corgi">
                         </div>
                         <!-- Item 3 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="https://placehold.co/800x400" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            <img src="medias/corgi-carrousel-3.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Photo de corgi">
                         </div>
                         <!-- Item 4 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="https://placehold.co/800x400" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            <img src="medias/corgi-carrousel-4.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Photo de corgi">
                         </div>
                         <!-- Item 5 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="https://placehold.co/800x400" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            <img src="medias/corgi-carrousel-5.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Photo de corgi">
                         </div>
                     </div>
                     <!-- Slider indicators -->
@@ -92,7 +117,7 @@
                     </button>
                     <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
                         <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                            <svg class="w-4 h-4 text-white aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
                             </svg>
                             <span class="sr-only">Next</span>
@@ -104,17 +129,17 @@
         <section>
             <div class="container mx-auto grid grid-cols-12 m-10">
                 <div class="col-span-12 grid grid-cols-12">
-                    <div class="grid grid-cols-12 col-span-12 md:col-span-4 mb-8">
-                        <img class="mb-2 col-start-2 col-end-12" src="https://placehold.co/500x500" alt="">
-                        <span class="col-start-2 col-end-12">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, officiis?</span>
+                    <div class="grid grid-cols-12 col-span-12 md:col-span-4 mb-8 content-start">
+                        <img class="mb-2 col-start-2 col-end-12" src="medias/corgi-adopte-1.png" alt="Photo de corgi Charlie">
+                        <span class="col-start-2 col-end-12">Charlie est un Corgi Pembroke tricolore, toujours prêt pour une partie de jeu grâce à son enthousiasme contagieux.</span>
                     </div>
-                    <div class="grid grid-cols-12 col-span-12 md:col-span-4 mb-8">
-                        <img class="mb-2 col-start-2 col-end-12" src="https://placehold.co/500x500" alt="">
-                        <span class="col-start-2 col-end-12">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, officiis?</span>
+                    <div class="grid grid-cols-12 col-span-12 md:col-span-4 mb-8 content-start">
+                        <img class="mb-2 col-start-2 col-end-12" src="medias/corgi-adopte-2.png" alt="Photo de corgi Daisy">
+                        <span class="col-start-2 col-end-12">Daisy, une Corgi Pembroke sable, incarne l'élégance avec sa nature douce et attentionnée.</span>
                     </div>
-                    <div class="grid grid-cols-12 col-span-12 md:col-span-4 mb-8">
-                        <img class="mb-2 col-start-2 col-end-12" src="https://placehold.co/500x500" alt="">
-                        <span class="col-start-2 col-end-12">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, officiis?</span>
+                    <div class="grid grid-cols-12 col-span-12 md:col-span-4 mb-8 content-start">
+                        <img class="mb-2 col-start-2 col-end-12" src="medias/corgi-adopte-3.png" alt="Photo de corgi Max">
+                        <span class="col-start-2 col-end-12">Max, le Corgi Cardigan bleu merle, est un compagnon intrépide qui adore explorer le monde et surprendre par son intelligence.</span>
                     </div>
                 </div>
                 <div class="col-span-12 mx-auto mt-5">
@@ -129,7 +154,7 @@
             <div class="flex justify-between flex-wrap px-4 pb-2">
                 <div>
                     <a href="tel:1-418-905-2287" class="fa fa-phone hover:text-yellow-500"> 418-905-2287</a>
-                    <a href="mailto:jessy.stpierre@live.com" class="fa fa-envelope-o ml-2 text-gray-900 hover:text-yellow-500"> jessy.stpierre@live.com</a>
+                    <a href="mailto:jessy.stpierre@live.com" class="fa fa-envelope-o ml-2 hover:text-yellow-500"> jessy.stpierre@live.com</a>
                 </div>
                 <div class="flex">
                     <span>Jessy St-Pierre</span>

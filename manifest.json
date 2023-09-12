@@ -1,0 +1,23 @@
+{
+    "name": "CorgiLuxe",
+    "short_name": "CL",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#eab308",
+    "description": "CorgiLuxe is a corgi website that sells corgi puppies.",
+    "theme_color": "#eab308",
+    "icons": [
+      {
+        "src": "medias/maskable_icon_x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "medias/maskable_icon_x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }
+    ]
+  }

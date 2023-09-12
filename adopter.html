@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="medias/favicon.png">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script/validation-formulaire.js" defer></script>
     <title>TP3</title>
 </head>
 <body>
@@ -15,7 +19,7 @@
         <nav class="border-gray-200 bg-yellow-500">
             <div class="container flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="index.html" class="flex items-center">
-                    <img src="https://placehold.co/600x400" class="h-12 mr-3" alt="">
+                    <img src="medias/logo_transparent.png" class="h-20 mr-3" alt="logo">
                 </a>
                 <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 rounded-lg md:hidden focus:ring-2 text-gray-800 hover:bg-yellow-200 focus:ring-orange-400" aria-controls="navbar-default" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
@@ -39,25 +43,25 @@
     </header>
     <main>
         <section>
-            <div>
-                <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zqL31hUuuIg?si=Su4JCshcKyS3kBFr" title="YouTube video player" frameborder="0" allow="" allowfullscreen></iframe>
+            <div class="container grid grid-cols-12 mx-auto mt-10 gap-x-10">
+                <div class="col-start-2 col-end-12 md:col-span-6 md:self-center">
+                    <video src="medias/corgi.mp4" controls></video>
                 </div>
-                <div>
-                    <h2>Le pour et le contre des Corgis</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aut optio tenetur excepturi id vero quae architecto assumenda. Laboriosam, inventore. Consectetur, ducimus cupiditate aliquam blanditiis, corrupti nam, fugit dolorum amet unde ratione veritatis. Cupiditate ipsum possimus corrupti, recusandae enim minima rem fuga ipsa nihil libero itaque nostrum fugit accusamus ad!</p>
+                <div class="col-start-2 col-end-12 my-5 md:col-span-6 md:self-center mt-5">
+                    <h2 class="text-center text-4xl text-zinc-800 font-medium mb-3">Le pour et le contre des Corgis</h2>
+                    <p>les Corgis sont des chiens qui allient intelligence exceptionnelle, caractère enjoué et santé robuste. Leur capacité d'apprentissage rapide les rend faciles à éduquer, tandis que leur nature joyeuse les rend idéaux pour les familles actives. Cependant, ils nécessitent de l'exercice régulier pour rester en forme et éviter l'ennui, tout en étant sujets à la prise de poids et à des problèmes de dos. Leur entretien peut être exigeant en raison de leur pelage dense. En fin de compte, les Corgis sont des compagnons charmants pour ceux qui sont prêts à leur offrir les soins appropriés et l'attention dont ils ont besoin.</p>
                 </div>
             </div>
         </section>
-        <section class="container mx-auto grid grid-cols-12 px-4 mb-20">
-            <div class="col-span-12 md:col-start-4 md:col-end-10">
-                <h2 class="text-4xl text-center font-semibold">Foire aux questions</h2>
+        <section class="container mx-auto grid grid-cols-12 px-4 mb-10 lg:mt-10">
+            <div class="col-span-12 md:col-start-4 md:col-end-10 mb-5">
+                <h2 class="text-4xl text-zinc-800 text-center font-medium">Foire aux questions</h2>
             </div>
             <div id="accordionExample" class="col-span-12 grid grid-cols-12 mt-2">
                 <div class="col-span-12 xl:col-span-6 mb-6 xl:pr-3">
-                    <div class="rounded-t-lg border-2 border-orange-500 bg-white">
+                    <div class="rounded-t-lg border-2 border-yellow-500 bg-white">
                         <h3 class="mb-0" id="headingOne">
-                            <button class="group relative flex w-full items-center rounded-t-[15px] border-0 bg-white px-5 py-4 text-left text-lg font-medium text-orange-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)]" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Rétro et Flamboyant : L'Immersive Direction Artistique
+                            <button class="group relative flex w-full items-center rounded-t-[15px] border-0 bg-white px-5 py-4 text-left text-lg font-medium text-yellow-900 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)]" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Quelle est l'origine des Corgis ?
                                 <span class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -73,13 +77,13 @@
                         </h3>
                         <div id="collapseOne" class="!visible hidden" data-te-collapse-item aria-labelledby="headingOne" data-te-parent="#accordionExample">
                             <div class="px-5 py-4">
-                                <p>La direction artistique du film Bohemian Rhapsody transporte les spectateurs dans les années 1970 et 1980, recréant avec précision l'esthétique visuelle de l'époque. Des costumes flamboyants aux décors rétro, chaque détail est soigneusement conçu pour immerger le public dans l'univers de Queen.</p>
+                                <p>Les Corgis ont des origines galloises et étaient à l'origine utilisés comme chiens de berger dans le Pays de Galles.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="border-2 border-t-0 border-orange-500 bg-white">
+                    <div class="border-2 border-t-0 border-yellow-500 bg-white">
                         <h3 class="mb-0" id="headingTwo">
-                            <button class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-lg font-medium text-orange-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)]" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Captiver les Sens : La Mise en Scène Musicale
+                            <button class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-lg font-medium text-yellow-900 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)]" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Les Corgis sont-ils une race de chien intelligente ?
                                 <span class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -95,13 +99,13 @@
                         </h3>
                         <div id="collapseTwo" class="!visible hidden" data-te-collapse-item aria-labelledby="headingTwo" data-te-parent="#accordionExample">
                             <div class="px-5 py-4">
-                                <p>Les performances musicales du film sont magnifiquement mises en scène grâce à une direction artistique ingénieuse. Les scènes de concert captent l'énergie électrisante des performances live de Queen, avec des jeux de lumières spectaculaires et des décors grandioses.</p>
+                                <p>Oui, les Corgis sont considérés comme l'une des races de chiens les plus intelligentes, ce qui les rend faciles à entraîner.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="border-2 border-t-0 border-orange-500 bg-white">
+                    <div class="border-2 border-t-0 border-yellow-500 bg-white">
                         <h3 class="mb-0" id="headingThree">
-                            <button class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-lg font-medium text-orange-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)]" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Couleurs Électrisantes : L'Esthétique Visuelle Audacieuse
+                            <button class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-lg font-medium text-yellow-900 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)]" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Les Corgis sont-ils adaptés aux familles avec des enfants ?
                                 <span class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -117,13 +121,13 @@
                         </h3>
                         <div id="collapseThree" class="!visible hidden" data-te-collapse-item aria-labelledby="headingThree" data-te-parent="#accordionExample">
                             <div class="px-5 py-4">
-                                <p>L'utilisation de couleurs vives et audacieuses contribue à l'esthétique visuelle unique du film. Les tons chauds et saturés évoquent l'énergie passionnée de la musique de Queen, tandis que les contrastes marqués ajoutent de la profondeur et de l'intensité aux scènes clés.</p>
+                                <p>Oui, les Corgis ont un caractère enjoué et sont généralement d'excellents compagnons pour les familles, y compris avec des enfants.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="border-2 border-t-0 border-orange-500 bg-white">
+                    <div class="border-2 border-t-0 border-yellow-500 bg-white">
                         <h3 class="mb-0" id="headingFour">
-                            <button class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-lg font-medium text-orange-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)]" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Rendre l'Histoire Vivante : La Recréation des Lieux
+                            <button class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-lg font-medium text-yellow-900 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)]" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Combien de temps peuvent vivre les Corgis en moyenne ?
                                 <span class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -139,13 +143,13 @@
                         </h3>
                         <div id="collapseFour" class="!visible hidden" data-te-collapse-item aria-labelledby="headingFour" data-te-parent="#accordionExample">
                             <div class="px-5 py-4">
-                                <p>La reconstitution des lieux emblématiques de la carrière de Queen, tels que le studio d'enregistrement Abbey Road ou la salle de concert du Live Aid, est d'une précision remarquable. La direction artistique rend hommage à l'importance historique de ces endroits tout en les adaptant au langage cinématographique pour créer des séquences visuellement saisissantes.</p>
+                                <p>Les Corgis ont une longévité moyenne de 12 à 15 ans, voire plus, avec des soins appropriés.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="rounded-b-lg border-2 border-t-0 border-orange-500 bg-white">
+                    <div class="rounded-b-lg border-2 border-t-0 border-yellow-500 bg-white">
                         <h3 class="accordion-header mb-0" id="headingFive">
-                            <button class="group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-lg font-medium text-orange-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)] [&[data-te-collapse-collapsed]]:rounded-b-[15px] [&[data-te-collapse-collapsed]]:transition-none" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Style Iconique : Les Costumes Époustouflants
+                            <button class="group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-lg font-medium text-yellow-900 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)] [&[data-te-collapse-collapsed]]:rounded-b-[15px] [&[data-te-collapse-collapsed]]:transition-none" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Les Corgis sont-ils sujets à des problèmes de santé particuliers ?
                                 <span class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -161,15 +165,15 @@
                         </h3>
                         <div id="collapseFive" class="!visible hidden" data-te-collapse-item aria-labelledby="headingFive" data-te-parent="#accordionExample">
                             <div class="px-5 py-4">
-                                <p>Les costumes portés par les acteurs sont un élément essentiel de la direction artistique de Bohemian Rhapsody. De la tenue flamboyante de Freddie Mercury à ses célèbres pantalons moulants et vestes en cuir, chaque ensemble est conçu pour refléter le style unique et l'individualité des membres du groupe.</p>
+                                <p>Ils peuvent être sujets à des problèmes de dos, comme la hernie discale, en raison de leur morphologie. Leur prise de poids doit également être surveillée.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-span-12 xl:col-span-6 mb-6 xl:pl-3">
-                    <div class="rounded-t-lg border-2 border-orange-500 bg-white">
+                    <div class="rounded-t-lg border-2 border-yellow-500 bg-white">
                         <h3 class="mb-0" id="headingSix">
-                            <button class="group relative flex w-full items-center rounded-t-[15px] border-0 bg-white px-5 py-4 text-left text-lg font-medium text-orange-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)]" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Authenticité Visuelle : Les Décors Réalistes
+                            <button class="group relative flex w-full items-center rounded-t-[15px] border-0 bg-white px-5 py-4 text-left text-lg font-medium text-yellow-900 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)]" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Les Corgis sont-ils adaptés à la vie en appartement ?
                                 <span class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -185,13 +189,13 @@
                         </h3>
                         <div id="collapseSix" class="!visible hidden" data-te-collapse-item aria-labelledby="headingSix" data-te-parent="#accordionExample">
                             <div class="px-5 py-4">
-                                <p>Les décors intérieurs, tels que les studios d'enregistrement et les chambres d'hôtel, sont minutieusement recréés pour représenter l'époque. Les moindres détails, des posters sur les murs aux équipements audio vintage, contribuent à l'authenticité visuelle du film.</p>
+                                <p>Oui, en raison de leur petite taille, les Corgis s'adaptent bien à la vie en appartement, mais ils ont besoin d'exercice régulier.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="border-2 border-t-0 border-orange-500 bg-white">
+                    <div class="border-2 border-t-0 border-yellow-500 bg-white">
                         <h3 class="mb-0" id="headingSeven">
-                            <button class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-lg font-medium text-orange-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)]" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">Animations Créatives : L'Innovation Artistique
+                            <button class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-lg font-medium text-yellow-900 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)]" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">Les Corgis sont-ils des chiens de garde ?
                                 <span class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -207,13 +211,13 @@
                         </h3>
                         <div id="collapseSeven" class="!visible hidden" data-te-collapse-item aria-labelledby="headingSeven" data-te-parent="#accordionExample">
                             <div class="px-5 py-4">
-                                <p>Les séquences d'animation qui ponctuent le récit apportent une dimension artistique supplémentaire à Bohemian Rhapsody. Elles explorent l'imagination créative de Freddie Mercury et offrent une interprétation visuelle innovante des paroles des chansons emblématiques de Queen.</p>
+                                <p>Oui, les Corgis ont un fort instinct de protection et peuvent être d'excellents chiens de garde malgré leur petite taille.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="border-2 border-t-0 border-orange-500 bg-white">
+                    <div class="border-2 border-t-0 border-yellow-500 bg-white">
                         <h3 class="mb-0" id="headingEight">
-                            <button class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-lg font-medium text-orange-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)]" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">Capturer l'Émotion : La Cinématographie Engageante
+                            <button class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-lg font-medium text-yellow-900 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)]" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">Les Corgis perdent-ils beaucoup de poils ?
                                 <span class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -229,13 +233,13 @@
                         </h3>
                         <div id="collapseEight" class="!visible hidden" data-te-collapse-item aria-labelledby="headingEight" data-te-parent="#accordionExample">
                             <div class="px-5 py-4">
-                                <p>Les jeux de caméra et de montage soutiennent la direction artistique en créant une dynamique visuelle captivante. Des plans serrés sur les visages des acteurs lors des performances musicales aux mouvements de caméra fluides lors des scènes d'action, chaque choix cinématographique est pensé pour renforcer l'impact émotionnel des scènes.</p>
+                                <p>Oui, les Corgis ont un pelage dense et nécessitent un toilettage régulier pour éviter la perte de poils excessive.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="border-2 border-t-0 border-orange-500 bg-white">
+                    <div class="border-2 border-t-0 border-yellow-500 bg-white">
                         <h3 class="mb-0" id="headingNine">
-                            <button class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-lg font-medium text-orange-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)]" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">Jeux de Lumière et d'Ombres : L'Atmosphère Visuelle Évocatrice
+                            <button class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-lg font-medium text-yellow-900 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)]" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">Les Corgis sont-ils sociables avec d'autres animaux domestiques ?
                                 <span class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -251,13 +255,13 @@
                         </h3>
                         <div id="collapseNine" class="!visible hidden" data-te-collapse-item aria-labelledby="headingNine" data-te-parent="#accordionExample">
                             <div class="px-5 py-4">
-                                <p>L'utilisation de la lumière et des ombres dans la direction artistique crée une atmosphère évocatrice tout au long du film. Des jeux de lumière théâtraux sur scène aux contrastes sombres dans les moments plus intimes, l'éclairage contribue à raconter l'histoire de Queen d'une manière visuellement puissante.</p>
+                                <p>Oui, en règle générale, les Corgis sont sociables avec d'autres chiens et animaux domestiques s'ils sont correctement socialisés dès leur jeune âge.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="rounded-b-lg border-2 border-t-0 border-orange-500 bg-white">
+                    <div class="rounded-b-lg border-2 border-t-0 border-yellow-500 bg-white">
                         <h3 class="accordion-header mb-0" id="headingTen">
-                            <button class="group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-lg font-medium text-orange-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)] [&[data-te-collapse-collapsed]]:rounded-b-[15px] [&[data-te-collapse-collapsed]]:transition-none" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">Symphonie Audiovisuelle : La Direction Artistique Complète
+                            <button class="group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-lg font-medium text-yellow-900 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(249,115,22)] [&[data-te-collapse-collapsed]]:rounded-b-[15px] [&[data-te-collapse-collapsed]]:transition-none" type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">Quelle est la différence entre le Corgi Pembroke et Cardigan ?
                                 <span class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -273,54 +277,53 @@
                         </h3>
                         <div id="collapseTen" class="!visible hidden" data-te-collapse-item aria-labelledby="headingTen" data-te-parent="#accordionExample">
                             <div class="px-5 py-4">
-                                <p>Enfin, la direction artistique de Bohemian Rhapsody ne se limite pas à l'esthétique visuelle, elle englobe également la conception sonore et la bande originale du film. Les enregistrements originaux de Queen sont habilement intégrés au récit, créant une expérience audiovisuelle immersive qui célèbre la musique légendaire du groupe.</p>
+                                <p>La principale différence réside dans leurs oreilles ; les Pembroke ont des oreilles droites, tandis que les Cardigan ont des oreilles légèrement arrondies. Les deux races ont également des variations de pelage et de couleur.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
-            <form id="form" action="confirmation.html" onsubmit="return validateForm()">
-                <h2>S'inscrire à la liste d'attente</h2>
-                <div class="input-control">
-                    <label for="nom">Nom</label>
-                    <input type="text" name="nom" id="nom">
+        <section class="bg-orange-100 py-5 px-4">
+            <form class="container grid grid-cols-12 mx-auto gap-4" id="form" action="confirmation.html" onsubmit="return validateForm()">
+                <h2 class="text-4xl text-zinc-800 font-medium col-span-12">S'inscrire à la liste d'attente</h2>
+                <div class="input-control col-start-1 col-end-6 md:col-end-5 lg:col-end-4 xl:col-end-3">
+                    <label class="hidden" for="nom">Nom</label>
+                    <input class="border-yellow-500" type="text" name="nom" id="nom" placeholder="Nom">
                     <div class="errorMessage"></div>
                 </div>
-                <div class="input-control">
-                    <label for="prenom">Prenom</label>
-                    <input type="text" name="prenom" id="prenom">
+                <div class="input-control col-start-7 col-end-12 md:col-start-5 lg:col-start-4 xl:col-start-3">
+                    <label class="hidden" for="prenom">Prenom</label>
+                    <input class="border-yellow-500" type="text" name="prenom" id="prenom" placeholder="Prénom">
                     <div class="errorMessage"></div>
                 </div>
-                <div class="input-control">
-                    <label for="adresse">Adresse</label>
-                    <input type="text" name="adresse" id="adresse">
+                <div class="input-control col-span-12">
+                    <label class="hidden" for="adresse">Adresse</label>
+                    <input class="border-yellow-500 w-96" type="text" name="adresse" id="adresse" placeholder="Adresse">
                     <div class="errorMessage"></div>
                 </div>
-                <div class="input-control">
-                    <label for="ville">Ville</label>
-                    <input type="text" name="ville" id="ville">
+                <div class="input-control col-start-1 col-end-6 md:col-end-5 lg:col-end-4 xl:col-end-3">
+                    <label class="hidden" for="ville">Ville</label>
+                    <input class="border-yellow-500" type="text" name="ville" id="ville" placeholder="Ville">
                     <div class="errorMessage"></div>
                 </div>
-                <div class="input-control">
-                    <label for="codepostal">Code postal</label>
-                    <input type="text" name="codepostal" id="codepostal">
+                <div class="input-control col-start-7 col-end-12 md:col-start-5 lg:col-start-4 xl:col-start-3">
+                    <label class="hidden" for="codePostal">Code postal</label>
+                    <input class="border-yellow-500 w-32"  type="text" name="codepostal" id="codePostal" placeholder="Code postal">
                     <div class="errorMessage"></div>
                 </div>
-                <div class="input-control">
-                    <label for="telephone">Téléphone</label>
-                    <input type="tel" name="telephone" id="telephone">
+                <div class="input-control col-start-1 col-end-6 md:col-end-5 lg:col-end-4 xl:col-end-3">
+                    <label class="hidden" for="telephone">Téléphone</label>
+                    <input class="border-yellow-500" type="tel" name="telephone" id="telephone" placeholder="Téléphone">
                     <div class="errorMessage"></div>
                 </div>
-                <div class="input-control">
-                    <label for="email">Courriel</label>
-                    <input type="email" name="email" id="email">
+                <div class="input-control col-start-7 col-end-13 md:col-start-5 lg:col-start-4 xl:col-start-3">
+                    <label class="hidden" for="email">Courriel</label>
+                    <input class="border-yellow-500" type="email" name="email" id="email" placeholder="Courriel">
                     <div class="errorMessage"></div>
                 </div>
-                <input class="btn" type="submit">
-            </form>
-            
+                <input class="btn col-span-3 lg:col-span-2 xl:col-span-1 inline-block bg-yellow-500 hover:bg-orange-400 px-5 py-2 rounded-lg font-medium hover:text-white" type="submit" value="Envoyer">
+            </form>  
         </section>
     </main>
     <footer class="bg-zinc-900 pt-10">
@@ -328,7 +331,7 @@
             <div class="flex justify-between flex-wrap px-4 pb-2">
                 <div>
                     <a href="tel:1-418-905-2287" class="fa fa-phone hover:text-yellow-500"> 418-905-2287</a>
-                    <a href="mailto:jessy.stpierre@live.com" class="fa fa-envelope-o ml-2 text-gray-900 hover:text-yellow-500"> jessy.stpierre@live.com</a>
+                    <a href="mailto:jessy.stpierre@live.com" class="fa fa-envelope-o ml-2 hover:text-yellow-500"> jessy.stpierre@live.com</a>
                 </div>
                 <div class="flex">
                     <span>Jessy St-Pierre</span>
